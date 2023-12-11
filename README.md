@@ -1,6 +1,8 @@
 # Sleek Stream Theme
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/4b953b48-5f65-4b08-98aa-c98522fc1329/deploy-status)](https://app.netlify.com/sites/sleek-stream-theme/deploys)
+[![CodeQL](https://github.com/Armoghans-Organization/Sleek-Stream-Theme/actions/workflows/codeql.yml/badge.svg)](https://github.com/Armoghans-Organization/Sleek-Stream-Theme/actions/workflows/codeql.yml)
+[![Dependency Review](https://github.com/Armoghans-Organization/Sleek-Stream-Theme/actions/workflows/dependency-review.yml/badge.svg?branch=main)](https://github.com/Armoghans-Organization/Sleek-Stream-Theme/actions/workflows/dependency-review.yml)
 
 **Sleek Stream** is a versatile **Hugo theme**  designed to provide a modern web development experience. Whether you're building a portfolio, managing blogs, or sharing cheat sheets, Sleek Stream has got you covered.
 
