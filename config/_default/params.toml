@@ -1,0 +1,19 @@
+# Author information
+author = "Armoghan-ul-Mohmin"
+github = "https://github.com/Armoghan-ul-Mohmin"
+facebook = "https://facebook.com/armoghan"
+twitter = "@armoghan16"
+# Open Graph (OG) image for social media sharing
+og_image = "/images/og.png"
+# Site information
+sitename = "Sleek Stream"
+Decsription = "Custom Hugo theme with Tailwind CSS, SCSS, Summery Panel, Admin Panel, and Light/Dark theme support."
+
+# Custom settings (you can adjust these based on your needs)
+[Custom]
+Css = false # Disable custom CSS (set to true if you want to enable)
+Js = false # Disable custom JavaScript (set to true if you want to enable)
+
+[Nav]
+enableSearch = true
+enableThemeSwitcher = true
