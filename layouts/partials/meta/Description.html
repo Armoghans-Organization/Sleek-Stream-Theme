@@ -1,0 +1,10 @@
+{{- if .Description }}
+<!-- Meta tag for page description -->
+<meta name="description" content="{{ .Params.description }}" />
+<!-- Meta tag for structured data description -->
+<meta itemprop="description" content="{{ .Params.description }}" />
+<!-- Open Graph meta tag for description -->
+<meta property="og:description" content="{{ .Params.description }}" />
+<!-- Twitter meta tag for description -->
+<meta name="twitter:description" content="{{ .Params.description }}" />
+{{ end -}}

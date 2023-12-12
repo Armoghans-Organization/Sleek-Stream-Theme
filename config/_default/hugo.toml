@@ -1,3 +1,16 @@
+# The base URL for your site. Should include the protocol (e.g., 'https://').
 baseURL = 'https://sleek-stream-theme.netlify.app/'
-languageCode = 'en-us'
+# The title of your site.
 title = 'Sleek Stream'
+# The default language code for your site.
+languageCode = "en-us"
+# The number of items to display per page in paginated lists.
+paginate = 12
+# Enable emojis in content.
+enableEmoji = true
+# Enable Git info for Hugo to use last modification date, last author, etc.
+enableGitInfo = true
+# Enable the generation of a robots.txt file.
+enableRobotsTXT = true
+# Convert relative URLs to their absolute counterparts.
+canonifyURLs = true

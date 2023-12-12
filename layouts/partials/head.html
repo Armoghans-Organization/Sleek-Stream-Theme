@@ -1,5 +1,37 @@
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0">
-<title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
-{{ partialCached "head/css.html" . }}
-{{ partialCached "head/js.html" . }}
+<head>
+    <!-- Character set and encoding -->
+    <meta charset="utf-8" />
+    <!-- Responsive design viewport settings -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- ======================================================================== -->
+    <!-- ========================== Hugo SEO Meta Tags ========================== -->
+    <!-- ========================================================================-->
+    <!-- Date meta tags -->
+    {{- partial "meta/Date.html" . -}}
+    <!-- Language meta tags -->
+    {{- partial "meta/Language.html" . -}}
+    <!-- Website meta tags -->
+    {{- partial "meta/Website.html" . -}}
+    <!-- Article meta tags -->
+    {{- partial "meta/Article.html" . -}}
+    <!-- Description meta tags -->
+    {{- partial "meta/Description.html" . -}}
+    <!-- Social Media meta tags -->
+    {{- partial "meta/Social-Media.html" . -}}
+    <!-- Search Engine Crawler meta tags -->
+    {{- partial "meta/Search-Engine-Crawler.html" . -}}
+    <!-- Image meta tags -->
+    {{- partial "meta/Image.html" . -}}
+    <!-- Link meta tags -->
+    {{- partial "meta/Link.html" . -}}
+    <!-- Other meta tags -->
+    {{- partial "meta/Other.html" . -}}
+    <!-- Favicon meta tags -->
+    {{- partial "meta/Favicon.html" . -}}
+    <!-- Title meta tags -->
+    {{- partial "meta/Title.html" . -}}
+    <!-- ======================================================================== -->
+    <!-- =============================== Styling ================================ -->
+    <!-- ========================================================================-->
+    {{- partialCached "head/css.html" . -}}
+</head>
