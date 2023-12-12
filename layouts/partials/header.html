@@ -1,2 +1,34 @@
-<h1>{{ site.Title }}</h1>
-{{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+<header class="container mx-auto">
+    <nav class="bg-white rounded-lg shadow-md p-4 flex items-center justify-between">
+        <!-- Logo and Title -->
+        <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
+            {{ if .Site.Params.Logo }}
+            <img src="{{ .Site.Params.Logo }}" class="h-8" alt="{{ .Site.Title }}" />
+            {{ end }}
+            <span class="text-2xl text-primary font-heading font-semibold">{{ .Site.Title }}</span>
+        </a>
+        <!-- Menu Items -->
+        {{ partial "menu.html" . }}
+        <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse items-center">
+            <!-- Search -->
+            {{ if .Site.Params.Nav.enableSearch }}
+            <div>
+                <button id="search-button" class="mx-3 px-3" aria-label="Search">
+                    <img src="{{ .Site.BaseURL }}/images/search.svg" alt="search" style="height: 20px; width: 20px;">
+                </button>
+            </div>
+            {{ end }}
+            <!-- Dark/Light Theme Toggle -->
+            {{ if .Site.Params.Nav.enableThemeToggle }}
+            <div>
+                <button id="theme-toggle" aria-label="Toggle Theme" class="flex items-center">
+                    <span id="moon"><img src="{{ .Site.BaseURL }}/images/moon.png" alt="moon"
+                            style="height: 25px; width: 25px;"></span>
+                    <span id="sun" class="hidden"><img src="{{ .Site.BaseURL }}/images/sun.png" alt="sun"
+                            style="height: 25px; width: 25px;"></span>
+                </button>
+            </div>
+            {{ end }}
+        </div>
+    </nav>
+</header>
