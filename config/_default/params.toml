@@ -8,6 +8,8 @@ og_image = "/images/og.png"
 # Site information
 sitename = "Sleek Stream"
 Decsription = "Custom Hugo theme with Tailwind CSS, SCSS, Summery Panel, Admin Panel, and Light/Dark theme support."
+# Navbar Logo
+Logo = '' # Leave blank for no logo
 # Website Preloder
 Preloder = true
 
@@ -15,3 +17,8 @@ Preloder = true
 [Custom]
 Css = false # Disable custom CSS (set to true if you want to enable)
 Js = false # Disable custom JavaScript (set to true if you want to enable)
+
+# Navigation settings
+[Nav]
+enableThemeToggle = true # Enable theme toggle in the navigation
+enableSearch = true # Enable search in the navigation
