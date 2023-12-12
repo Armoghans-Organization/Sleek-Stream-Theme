@@ -14,3 +14,7 @@ enableGitInfo = true
 enableRobotsTXT = true
 # Convert relative URLs to their absolute counterparts.
 canonifyURLs = true
+
+# Define the output formats for the 'home' section (homepage).
+[outputs]
+home = ["HTML", "RSS", "JSON"]
