@@ -7,16 +7,19 @@
 </head>
 
 <body class="light-mode dark:dark-mode">
-  <header>
-    {{ partial "header.html" . }}
-    {{- partial "dev/dev-tools.html" . -}}
-  </header>
-  <main>
-    {{ block "main" . }}{{ end }}
-  </main>
-  <footer>
-    {{ partial "footer.html" . }}
-  </footer>
+  {{ partial "preloder.html" . }}
+  <div class="hidden" id="main">
+    <header>
+      {{ partial "header.html" . }}
+      {{- partial "dev/dev-tools.html" . -}}
+    </header>
+    <main>
+      {{ block "main" . }}{{ end }}
+    </main>
+    <footer>
+      {{ partial "footer.html" . }}
+    </footer>
+  </div>
 </body>
 
 </html>

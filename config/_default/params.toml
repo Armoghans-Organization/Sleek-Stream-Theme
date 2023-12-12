@@ -8,6 +8,8 @@ og_image = "/images/og.png"
 # Site information
 sitename = "Sleek Stream"
 Decsription = "Custom Hugo theme with Tailwind CSS, SCSS, Summery Panel, Admin Panel, and Light/Dark theme support."
+# Website Preloder
+Preloder = true
 
 # Custom settings (you can adjust these based on your needs)
 [Custom]
