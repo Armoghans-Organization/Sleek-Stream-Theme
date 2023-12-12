@@ -8,7 +8,7 @@
 
 <body class="light-mode dark:dark-mode">
   {{ partial "preloder.html" . }}
-  <div class="hidden" id="main">
+  <div {{ if .Site.Params.Preloder }} class="hidden" id="main" {{ end }}>
     <header>
       {{ partial "header.html" . }}
       {{- partial "dev/dev-tools.html" . -}}
