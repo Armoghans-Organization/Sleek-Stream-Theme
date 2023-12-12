@@ -1,31 +1,21 @@
-name = 'Theme name'
-license = 'MIT'
-licenselink = 'https://github.com/owner/repo/LICENSE'
-description = 'Theme description'
-
-# The home page of the theme, where the source can be found
-homepage = 'https://github.com/owner/repo'
-
-# If you have a running demo of the theme
-demosite = 'https://owner.github.io/repo'
-
-# Taxonomy terms
-tags = ['blog', 'company']
-features = ['some', 'awesome', 'features']
-
-# If the theme has multiple authors
-authors = [
-  {name = 'Name of author', homepage = 'Website of author'},
-  {name = 'Name of author', homepage = 'Website of author'}
+name = "Sleek-Stream"
+license = "MIT"
+licenselink = "https://github.com/Armoghans-Organization/Sleek-Stream-Theme/blob/main/LICENSE"
+description = "Sleek Stream is a versatile Hugo theme designed to provide a modern web development experience."
+homepage = "https://github.com/Armoghans-Organization/Sleek-Stream-Theme"
+demosite = "https://sleek-stream-theme.netlify.app/"
+tags = [
+  "blog",
+  "minimal",
+  "responsive",
+  "dark mode",
+  "dark",
+  "light",
+  "tailwind",
+  "portfolio"
 ]
+features = ["syntax highlighting", "dark mode"]
 
-# If the theme has a single author
 [author]
-  name = 'Your name'
-  homepage = 'Your website'
-
-# If porting an existing theme
-[original]
-  author = 'Name of original author'
-  homepage = 'Website of original author'
-  repo = 'https://github.com/owner/repo'
+name = "Armoghan-ul-Mohmin"
+homepage = "https://armoghan-portfolio.netlify.app"
