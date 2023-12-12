@@ -3,7 +3,7 @@
         <!-- Logo and Title -->
         <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
             {{ if .Site.Params.Logo }}
-            <img src="{{ .Site.Params.Logo }}" class="h-8" alt="{{ .Site.Title }}" />
+            <img src="{{ .Site.BaseURL }}{{ .Site.Params.Logo }}" class="h-8" alt="{{ .Site.Title }}" />
             {{ end }}
             <span class="text-2xl text-primary font-heading font-semibold">{{ .Site.Title }}</span>
         </a>
@@ -209,20 +209,21 @@
                 resultsHTML =
                     resultsHTML +
                     `<li class="mb-2">
-                        <div class="container dark:text-white">
-                        <a class="flex items-center px-3 py-2 rounded-md appearance-none bg-gradient-to-r from-blue-300 to-purple-200 dark:bg-neutral-700 focus:bg-primary-100 hover:bg-primary-100 dark:hover:bg-primary-900 dark:focus:bg-primary-900 focus:outline-dotted focus:outline-transparent focus:outline-2"
-                          href="${value.item.permalink}" tabindex="0">
-                          <div class="grow">
-                            <div class="-mb-1 text-lg font-bold">${value.item.title}</div>
-                            <div class="text-sm text-neutral-500 dark:text-neutral-400">${value.item.section}<span
-                                class="px-2 text-primary-500">&middot;</span>${value.item.date}</span></div>
-                            <div class="text-sm italic">${value.item.summary}</div>
-                          </div>
-                          <div class="ml-2 ltr:block rtl:hidden text-neutral-500">&rarr;</div>
-                          <div class="mr-2 ltr:hidden rtl:block text-neutral-500">&larr;</div>
-                        </a>
-                      </div>
-                      </li>`;
+                        <div class="container search-clr dark:search-clr-dark rounded">
+                            <a class="flex items-center px-3 py-2  appearance-none"
+                                href="${value.item.permalink}" tabindex="0">
+                                <div class="grow">
+                                    <div class="-mb-1 text-lg font-bold font-heading">${value.item.title}</div>
+                                    <div class="text-sm ">${value.item.section}<span
+                                            class="px-2 font-body">&middot;</span>${value.item.date}</span></div>
+                                    <div class="text-sm italic">${value.item.summary}</div>
+                                </div>
+                                <div class="ml-2 ltr:block rtl:hidden">&rarr;</div>
+                                <div class="mr-2 ltr:hidden rtl:block">&larr;</div>
+                            </a>
+                        </div>
+                    </li>                    
+                    `;
             });
             hasResults = true;
         } else {
