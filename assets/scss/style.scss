@@ -1,3 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Site Specific */
+/* put site specific css styles here using the @layer directive */
+/* see https://tailwindcss.com/docs/functions-and-directives#layer */
+/* main.css or styles.css or whatever your main CSS file is named */
+
+@layer base {
+    :root {
+        --primary: 242 78 24;
+        --secondary: 243 173 89;
+        --accent: 89 222 227;
+        --dark-primary: 231 68 13;
+        --dark-secondary: 164 95 12;
+        --dark-accent: 28 161 166;
+    }
+}
+
+@layer components {
+    .light-mode {
+        @apply bg-gradient-to-r from-purple-300 to-blue-200 text-slate-700;
+    }
+    .dark-mode {
+        @apply bg-gradient-to-r from-gray-800 to-gray-600 text-white;
+    }
+}
