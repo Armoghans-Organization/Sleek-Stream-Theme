@@ -9,6 +9,7 @@
 <body class="light-mode dark:dark-mode">
   <header>
     {{ partial "header.html" . }}
+    {{- partial "dev/dev-tools.html" . -}}
   </header>
   <main>
     {{ block "main" . }}{{ end }}
