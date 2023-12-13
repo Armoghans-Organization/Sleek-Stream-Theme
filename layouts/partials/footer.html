@@ -1,5 +1,20 @@
-<footer>
-    <p>Copyright {{ now.Year }}. All rights reserved.</p>
-</footer>
+<footer class="bg-white rounded-lg shadow m-4">
+    <!-- Copyright notice with the current year -->
+    {{ if .Site.Params.Footer.showCopyright }}
+    <div class="mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">
+            © {{ now.Year }}. <a href="{{ .Site.BaseURL }}" class="hover:underline">{{ .Site.Title }}™</a>. All Rights
+            Reserved.
+        </span>
+        {{ end }}
 
+
+    </div>
+</footer>
+<!-- ======================================================================== -->
+<!-- =============================== Scripts ================================ -->
+<!-- ========================================================================-->
 {{ partialCached "head/js.html" . }}
+</body>
+
+</html>

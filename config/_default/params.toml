@@ -22,3 +22,7 @@ Js = false # Disable custom JavaScript (set to true if you want to enable)
 [Nav]
 enableThemeToggle = true # Enable theme toggle in the navigation
 enableSearch = true # Enable search in the navigation
+
+[Footer]
+showFootermenu = true
+showCopyright = true
