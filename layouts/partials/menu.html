@@ -1,0 +1,12 @@
+<!-- Full-width Navigation Links (Visible on Desktop) -->
+<div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
+    <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1">
+        <ul class="flex flex-col font-medium text-primary font-heading p-4 md:p-0 mt-4 border rounded-lg md:space-x-8 rtl:space-x-reverse
+            md:flex-row md:mt-0 md:border-0">
+            {{ range .Site.Menus.mainmenu }}
+            <li><a href="{{ .URL }}" class="hover:underline block py-2 px-3 md:p-0 rounded md:bg-transparent"
+                    aria-current="page">{{ .Pre }} <span>{{ .Name }}</span></a></li>
+            {{ end }}
+        </ul>
+    </div>
+</div>

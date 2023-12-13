@@ -1,4 +1,11 @@
-<header class="container mx-auto">
+<script>
+    function toggleMenu() {
+        var menu = document.getElementById('menu');
+        menu.classList.toggle('hidden');
+    }
+</script>
+
+<header class="mx-auto">
     <nav class="bg-white rounded-lg shadow-md p-4 flex items-center justify-between">
         <!-- Logo and Title -->
         <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
@@ -29,8 +36,24 @@
                 </button>
             </div>
             {{ end }}
+            <button class="text-primary md:hidden" onclick="toggleMenu()">
+                <img src="{{ .Site.BaseURL }}/images/menu.png" alt="hamburger menu" style="height: 25px; width: 25px;">
+            </button>
         </div>
     </nav>
+    <span id="menu"
+        class="md:hidden hidden md:flex flex-col h-auto mt-4 bg-white border rounded-lg absolute top-12 shadow-md w-screen right-0">
+        <hr class="my-2 border-t">
+        <ul class="p-4 space-y-3 m-auto">
+            <div class="container">
+                {{ range .Site.Menus.mainmenu }}
+                <li><a href="{{ .URL }}" class="text-primary font-heading hover:underline">{{ .Pre }} <span>{{ .Name
+                            }}</span></a>
+                </li>
+                {{ end }}
+            </div>
+        </ul>
+    </span>
 </header>
 
 {{ if .Site.Params.Nav.enableSearch }}
