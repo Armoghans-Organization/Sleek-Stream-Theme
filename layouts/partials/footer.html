@@ -3,7 +3,8 @@
     {{ if .Site.Params.Footer.showCopyright }}
     <div class="mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
         <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">
-            © {{ now.Year }}. <a href="{{ .Site.BaseURL }}" class="hover:underline">{{ .Site.Title }}™</a>. All Rights
+            © {{ now.Year }}. <a href="{{ .Site.BaseURL }}" class="hover:underline font-semibold">{{ .Site.Title
+                }}™</a>. All Rights
             Reserved.
         </span>
         {{ end }}
