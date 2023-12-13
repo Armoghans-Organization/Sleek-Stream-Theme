@@ -4,7 +4,7 @@
 
 {{ partial "head.html" . }}
 
-<body class="light-mode dark:dark-mode">
+<body class="light-mode dark:dark-mode transition duration-300 ease-in-out transform">
   {{ partial "preloder.html" . }}
   <div {{ if .Site.Params.Preloder }} {{ if .IsHome }} class="hidden" id="main" {{ end }} {{ end }}>
     {{ partial "header.html" . }}
