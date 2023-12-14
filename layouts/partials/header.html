@@ -1,10 +1,39 @@
+<style>
+    body.menu-open {
+        overflow: hidden;
+    }
+</style>
 <script>
     function toggleMenu() {
         var menu = document.getElementById('menu');
+        var body = document.body;
+        var menuIcon = document.getElementById('menuIcon');
+
         menu.classList.toggle('hidden');
+        body.classList.toggle('menu-open');
+
+        // Change the menu icon source based on menu visibility
+        if (!menu.classList.contains('hidden')) {
+            menuIcon.src = '{{ .Site.BaseURL }}/images/closemenu.png';
+            // Add an event listener to the window for scrolling when the menu is open
+            window.addEventListener('scroll', closeMenuOnScroll);
+        } else {
+            menuIcon.src = '{{ .Site.BaseURL }}/images/menu.png';
+            // Remove the event listener when the menu is closed
+            window.removeEventListener('scroll', closeMenuOnScroll);
+        }
+    }
+
+    function closeMenuOnScroll() {
+        var menu = document.getElementById('menu');
+        var menuIcon = document.getElementById('menuIcon');
+
+        menu.classList.add('hidden');
+        document.body.classList.remove('menu-open');
+        menuIcon.src = '{{ .Site.BaseURL }}/images/menu.png';
+        window.removeEventListener('scroll', closeMenuOnScroll);
     }
 </script>
-
 <header class="mx-auto">
     <nav class="bg-white rounded-lg shadow-md p-4 flex items-center justify-between">
         <!-- Logo and Title -->
@@ -39,12 +68,13 @@
             </div>
             {{ end }}
             <button class="text-primary md:hidden" onclick="toggleMenu()">
-                <img src="{{ .Site.BaseURL }}/images/menu.png" alt="hamburger menu" style="height: 25px; width: 25px;">
+                <img id="menuIcon" src="{{ .Site.BaseURL }}/images/menu.png" alt="hamburger menu"
+                    style="height: 25px; width: 25px;">
             </button>
         </div>
     </nav>
     <span id="menu"
-        class="md:hidden hidden md:flex flex-col h-auto mt-4 bg-white border rounded-lg absolute top-12 shadow-md w-screen right-0">
+        class="md:hidden hidden md:flex flex-col h-auto mt-4 bg-white border rounded-lg absolute top-12 shadow-md w-screen right-0 z-10">
         <ul class="p-4 space-y-3 m-auto">
             <div class="container">
                 {{ range .Site.Menus.mainmenu }}
