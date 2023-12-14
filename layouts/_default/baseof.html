@@ -9,7 +9,7 @@
   <div {{ if .Site.Params.Preloder }} {{ if .IsHome }} class="hidden" id="main" {{ end }} {{ end }}>
     {{ partial "header.html" . }}
     {{- partial "dev/dev-tools.html" . -}}
-    <main class="mb-auto">
+    <main>
       {{ block "main" . }}{{ end }}
     </main>
     {{ partial "footer.html" . }}

@@ -1,0 +1,39 @@
+{{ define "main" }}
+
+<div
+    class="container mx-auto max-w-screen-xl px-6 grid gap-8 grid-cols-1 md:grid-cols-2 md:px-10 lg:px-14 xl:px-32 pt-16 pb-[42.5px]">
+    <div class="flex flex-col justify-between">
+        <div>
+            <h2 class="text-4xl lg:text-5xl font-body font-bold leading-tight"> Get In<span
+                    class="text-primary">Touch</span>
+            </h2>
+        </div>
+        <div class=" text-center">
+            <img src="{{ .Site.BaseURL }}images/contact.png" alt="Contact Logo" class="m-0 p-0 h-30 w-auto">
+        </div>
+    </div>
+    <form>
+        <div>
+            <span class="uppercase text-sm text-gray-600 dark:text-white font-bold">Name</span>
+            <input class="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+                type="text" placeholder="">
+        </div>
+        <div class="mt-6">
+            <span class="uppercase text-sm text-gray-600 dark:text-white font-bold">Email</span>
+            <input class="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+                type="email">
+        </div>
+        <div class="mt-6">
+            <span class="uppercase text-sm text-gray-600 dark:text-white font-bold">Message</span>
+            <textarea
+                class="w-full h-30 bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"></textarea>
+        </div>
+        <div class="my-6 xl:mb-0 lg:mb-0 md:mb-0">
+            <button type="submit"
+                class="uppercase text-sm font-bold tracking-wide bg-primary hover:bg-secondary text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline">
+                Send Message
+            </button>
+        </div>
+    </form>
+</div>
+{{ end }}

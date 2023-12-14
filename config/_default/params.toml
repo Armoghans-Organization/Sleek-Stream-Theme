@@ -26,3 +26,6 @@ enableSearch = true # Enable search in the navigation
 [Footer]
 showFootermenu = true
 showCopyright = true
+
+[Contact]
+Email = 'Armoghan16@gmail.com'
