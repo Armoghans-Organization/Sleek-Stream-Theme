@@ -1,3 +1,16 @@
 {{ define "main" }}
 
+<div class="container mx-auto flex items-center justify-center">
+    <div class="text-center">
+        <h1 class="mb-4 mt-[10rem] text-9xl font-extrabold text-primary font-heading animate-bounce">404
+        </h1>
+        <p class="mt-4 text-xl font-heading">Page Not Found</p>
+        <p class="mt-4 text-xl font-body">Oops! Looks like you're Lost.</p>
+        <p class="my-4 mb-[10.75rem]">
+            <a href="{{ .Site.BaseURL }}"
+                class="bg-primary hover:bg-secondary text-white font-semibold hover:text-white py-3 px-6 border border-primary hover:border-transparent rounded-full transition duration-300 ease-in-out transform hover:scale-105">Home</a>
+        </p>
+    </div>
+</div>
+
 {{ end }}
