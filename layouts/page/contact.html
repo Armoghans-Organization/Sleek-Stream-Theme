@@ -9,24 +9,25 @@
             </h2>
         </div>
         <div class=" text-center">
-            <img src="{{ .Site.BaseURL }}images/contact.png" alt="Contact Logo" class="m-0 p-0 h-30 w-auto">
+            <img src="{{ .Site.BaseURL }}images/contact.png" alt="Contact Logo" class="m-0 p-0 h-[25.5rem] w-auto">
         </div>
     </div>
-    <form>
+    <form name="contact" method="POST" data-netlify="true">
         <div>
             <span class="uppercase text-sm text-gray-600 dark:text-white font-bold">Name</span>
             <input class="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-                type="text" placeholder="">
+                type="text" placeholder="Name" name="name">
         </div>
         <div class="mt-6">
             <span class="uppercase text-sm text-gray-600 dark:text-white font-bold">Email</span>
             <input class="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-                type="email">
+                type="email" placeholder="Email" name="email">
         </div>
         <div class="mt-6">
             <span class="uppercase text-sm text-gray-600 dark:text-white font-bold">Message</span>
             <textarea
-                class="w-full h-30 bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"></textarea>
+                class="w-full h-30 bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+                placeholder="Message" rows="5" name="message"></textarea>
         </div>
         <div class="my-6 xl:mb-0 lg:mb-0 md:mb-0">
             <button type="submit"
