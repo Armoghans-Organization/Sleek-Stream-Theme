@@ -1,6 +1,6 @@
 +++
 title = 'Contact'
-preloder = false
+preloder = true
 layout =  "contact"
 +++
 
