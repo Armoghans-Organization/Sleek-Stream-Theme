@@ -27,9 +27,32 @@
     </div>
 
     <div class="mt-8">
-        <h3 class="text-2xl font-semibold text-primary mb-2">
+        <h3 class="text-2xl font-bold text-primary mb-2 underline">
             What I`m Doing
         </h3>
+        <div class="flex flex-wrap items-center justify-center text-center">
+            {{ range .Site.Params.Doing }}
+            <div class="w-full md:w-1/4 lg:w-1/4 xl:w-1/4 my-2 p-2">
+                <div class="max-w-sm h-full overflow-hidden border-2 rounded shadow-2xl relative backdrop-blur">
+                    <!-- Image -->
+                    <span class="absolute bottom-0 right-0 m-2">
+                        <span class="flex">
+                            <span class="rounded-md backdrop-blur px-1 py-1">
+                                <img src="{{ .Image }}" alt="{{ .Image }}">
+                            </span>
+                        </span>
+                    </span>
+                    <!-- Content -->
+                    <div class="relative z-10 min-h-36 px-6 py-4 flex flex-col justify-between">
+                        <div
+                            class="font-bold font-heading text-xl mb-2 text-dark-primary dark:text-primary  hover:underline hover:underline-offset-2">
+                            {{ .Name }}</div>
+                        <p class="text-lg font-body">{{ .Description }}</p>
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+        </div>
 
 
     </div>
