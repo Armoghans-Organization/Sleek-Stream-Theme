@@ -9,7 +9,7 @@
   <div {{ if .Site.Params.Preloder }} {{ if or .IsHome .Params.Preloder }} class="hidden" id="main" {{ end }} {{ end }}>
     {{ partial "header.html" . }}
     {{- partial "dev/dev-tools.html" . -}}
-    <main>
+    <main class="prose-xl">
       {{ block "main" . }}{{ end }}
     </main>
     {{ partial "footer.html" . }}
