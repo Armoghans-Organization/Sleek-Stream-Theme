@@ -7,7 +7,7 @@ twitter = "@armoghan16"
 og_image = "/images/og.png"
 # Site information
 sitename = "Sleek Stream"
-Decsription = "Custom Hugo theme with Tailwind CSS, SCSS, Summery Panel, Admin Panel, and Light/Dark theme support."
+Description = "Custom Hugo theme with Tailwind CSS, SCSS, Summery Panel, Admin Panel, and Light/Dark theme support."
 # Navbar Logo
 Logo = '' # Leave blank for no logo
 # Website Preloder
@@ -26,6 +26,62 @@ enableSearch = true # Enable search in the navigation
 [Footer]
 showFootermenu = true
 showCopyright = true
+
+[About]
+Name = 'Armoghan-ul-Mohmin'
+Description = 'I`m a student studying Digital Forensics and Cybersecurity at Lahore Garrison University. I`m passionate about understanding and protecting digital systems. I love solving digital mysteries and keeping up with the latest trends in cybersecurity. My goal is to become a cybersecurity expert and help make the digital world safer.'
+Description_2 = 'In addition to my studies, I actively participate in cybersecurity communities and attend workshops to gain practical experience. I believe that hands-on learning is crucial in this field. With each challenge I face and each problem I solve, I`m one step closer to achieving my dream of making the digital realm a more secure place for everyone'
+
+[[Doing]]
+Name = 'Web Design'
+Image = ''
+Description = 'The most modern and high-quality design made at a professional level.'
+
+[[Doing]]
+Name = 'Web Development'
+Image = ''
+Description = 'Professional-level website development expertise delivered with precision and excellence.'
+
+[[Doing]]
+Name = 'Digital Forensic'
+Image = ''
+Description = 'I`m excited to help with open-source projects, making digital security better for everyone.'
+
+[[Doing]]
+Name = 'Photography'
+Image = ''
+Description = 'I capture high-quality photos across diverse categories with a professional touch.'
+
+[[Education]]
+From = 'Lahore Garrison University'
+Year = '2021 — Present'
+Description = 'Batchlers in Digital Forensic and Cyber Security.'
+
+[[Education]]
+From = 'Punjab Groups Of Collages'
+Year = '2019 — 2021.'
+Description = 'ICS (Computer ,Maths ,Physics)'
+
+[[Education]]
+From = 'The Trust School'
+Year = '2017 — 2019'
+Description = 'Matric.'
+
+[[Skills]]
+Name = 'HTML'
+Percentage = '90'
+
+[[Skills]]
+Name = 'css'
+Percentage = '80'
+
+[[Skills]]
+Name = 'Js'
+Percentage = '45'
+
+[[Skills]]
+Name = 'Hugo'
+Percentage = '85'
 
 [Contact]
 Email = 'Armoghan16@gmail.com'

@@ -18,6 +18,9 @@
         --dark-secondary: 164 95 12;
         --dark-accent: 28 161 166;
     }
+    html {
+        scroll-behavior: smooth;
+    }
 }
 
 @layer components {
