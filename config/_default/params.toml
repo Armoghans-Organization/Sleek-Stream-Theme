@@ -52,5 +52,20 @@ Name = 'Photography'
 Image = ''
 Description = 'I capture high-quality photos across diverse categories with a professional touch.'
 
+[[Education]]
+From = 'Lahore Garrison University'
+Year = '2021 — Present'
+Description = 'Batchlers in Digital Forensic and Cyber Security.'
+
+[[Education]]
+From = 'Punjab Groups Of Collages'
+Year = '2019 — 2021.'
+Description = 'ICS (Computer ,Maths ,Physics)'
+
+[[Education]]
+From = 'The Trust School'
+Year = '2017 — 2019'
+Description = 'Matric.'
+
 [Contact]
 Email = 'Armoghan16@gmail.com'
