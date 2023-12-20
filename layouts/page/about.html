@@ -76,22 +76,43 @@
         </div>
 
         <!-- Skills -->
+        <h3 class="text-2xl font-semibold text-primary mb-2 underline">
+            Skills
+        </h3>
         <div class="mt-4">
-            <h3 class="text-2xl font-semibold text-primary mb-2">
-                Skills
-            </h3>
-            <ul class="list-disc list-inside text-gray-700">
-                <!-- Add more skills as needed -->
+            <ul>
+                {{ range .Site.Params.Skills }}
+                <div class="container mx-auto px-4">
+                    <ul class="list-none">
+                        <li class="mb-4">
+                            <div class="flex flex-col ">
+                                <div class="mb-2 sm:mb-0 sm:mr-8">
+                                    <h5 class="text-lg font-bold font-heading">{{ .Name }}</h5>
+                                </div>
+                                <div class="flex">
+                                    <span class="text-xs font-semibold mr-2">{{ .Percentage }}%</span>
+                                    <div class="w-full  bg-slate-300 h-2 rounded-full">
+                                        <div class="h-2 bg-dark-primary rounded-full"
+                                            style="width: {{ .Percentage }}%;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                {{ end }}
             </ul>
         </div>
 
         <!-- Portfolio -->
-        <div class="mt-4">
+        <!-- <div class="mt-4">
             <h3 class="text-2xl font-semibold text-primary mb-2">
                 Portfolio
             </h3>
-            <!-- Add your portfolio items here -->
-        </div>
+            /* Add your portfolio items here */ 
+    </div> -->
     </div>
 </div>
 {{ end }}

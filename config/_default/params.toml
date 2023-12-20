@@ -67,5 +67,21 @@ From = 'The Trust School'
 Year = '2017 — 2019'
 Description = 'Matric.'
 
+[[Skills]]
+Name = 'HTML'
+Percentage = '90'
+
+[[Skills]]
+Name = 'css'
+Percentage = '80'
+
+[[Skills]]
+Name = 'Js'
+Percentage = '45'
+
+[[Skills]]
+Name = 'Hugo'
+Percentage = '85'
+
 [Contact]
 Email = 'Armoghan16@gmail.com'
