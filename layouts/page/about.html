@@ -46,7 +46,7 @@
                     <!-- Content -->
                     <div class="relative z-10 min-h-36 px-6 py-4 flex flex-col justify-between">
                         <div
-                            class="font-bold font-heading text-xl mb-2 text-dark-secondary hover:underline hover:underline-offset-2">
+                            class="font-bold font-heading text-xl mb-2 text-dark-primary hover:underline hover:underline-offset-2">
                             {{ .Name }}</div>
                         <p class="text-lg font-body">{{ .Description }}</p>
                     </div>
@@ -68,7 +68,7 @@
                 {{ range .Site.Params.Education }}
                 <li class="mb-4">
                     <h2 class="font-bold font-body text-lg md:text-xl lg:text-2xl mb-1">{{ .From }}</h2>
-                    <span class="text-dark-secondary text-sm md:text-base lg:text-base">{{ .Year }}</span>
+                    <span class="text-secondary text-sm md:text-base lg:text-base">{{ .Year }}</span>
                     <p class="font-body text-base md:text-lg lg:text-lg mt-2">{{ .Description }}</p>
                 </li>
                 {{ end }}
