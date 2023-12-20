@@ -1,0 +1,64 @@
+{{ define "main" }}
+<div class="container mx-auto my-4">
+    <!-- Heading -->
+    <div class="text-center">
+        <h2 class="text-4xl font-bold text-primary mb-2">
+            About Me
+        </h2>
+        <hr class="mb-4">
+    </div>
+
+    <!-- 2 Columns on big screens  -->
+    <div class="lg:flex">
+        <div class="lg:w-1/4 mb-4 lg:mb-0">
+            <!-- About Image -->
+            <img src="{{ .Site.BaseURL }}images/about.png" alt="Your Name" class="rounded-lg h-auto w-full">
+        </div>
+        <div class="lg:w-10/12 lg:pl-8">
+            <!-- Name -->
+            <h1 class="font-body text-3xl mb-5">
+                Hi, I am <span class="text-primary font-semibold">{{ .Site.Params.About.Name }}</span>
+            </h1>
+            <!-- Description -->
+            <p class="text-lg font-body">{{ .Site.Params.About.Description }}</p>
+            <br>
+            <p class="text-lg font-body">{{ .Site.Params.About.Description_2 }}</p>
+        </div>
+    </div>
+
+    <div class="mt-8">
+        <h3 class="text-2xl font-semibold text-primary mb-2">
+            What I`m Doing
+        </h3>
+
+
+    </div>
+
+    <div class="mt-8">
+        <!-- Experience -->
+        <div>
+            <h3 class="text-2xl font-semibold text-primary mb-2">
+                Experience
+            </h3>
+        </div>
+
+        <!-- Skills -->
+        <div class="mt-4">
+            <h3 class="text-2xl font-semibold text-primary mb-2">
+                Skills
+            </h3>
+            <ul class="list-disc list-inside text-gray-700">
+                <!-- Add more skills as needed -->
+            </ul>
+        </div>
+
+        <!-- Portfolio -->
+        <div class="mt-4">
+            <h3 class="text-2xl font-semibold text-primary mb-2">
+                Portfolio
+            </h3>
+            <!-- Add your portfolio items here -->
+        </div>
+    </div>
+</div>
+{{ end }}
